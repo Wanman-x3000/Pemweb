@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Menu</title>
+</head>
+<body>
+        <form>
+            <table id="banana">
+            <tr><td>
+            <label>Makanan: </label>
+            <select class="data" id="makanan" name="makanan">
+                <option value="">Pilih Makanan</option>
+                <option value="30000" name="Sate">Sate</option>
+                <option value="20000" name="Kembang 7 Rupa">Kembang 7 Rupa</option>
+                <option value="45000" name="Dupa">Dupa</option>
+                <option value="15000" name="Soto">Soto</option>
+            </select></td>
+            </tr>
+            <tr><td>
+            <label >Jumlah Pesanan:</label>
+            <input class="data" id="pesanan" type="number" /><td></tr>
+            <tr><td><label >voucher: </label></tr>
+            <tr><td><input class="data" type="text" id="voucher"></tr>
+            <tr><td><button onclick="masukanData()">Submit</button></td></tr>
+            </table>
+        </form>
+        <br><br><br><br>
+        <table class="bungkus2">
+            <tr >
+                <td>Makanan : </td>
+                <td><div id="outputMakan"></div></td>
+            </tr>
+            <tr>
+                <td>Jumlah pesanan : </td>
+                <td><div id="outputPesanan"></div></td>
+            </tr>
+            <tr>
+                <td>Harga : </td>
+                <td><div id="outputHarga"></div></td>
+            </tr>
+            <tr>
+                <td>Setelah Diskon : </td>
+                <td><div id="outputDiskon"></div></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h1>Thank you For your Order </h1>
+</body>
+<script src="jas.js"></script>
+</html>
