@@ -2,11 +2,11 @@ function masukanData() {
     event.preventDefault();
     var dataMakanan = document.getElementById("makanan");
     var selectedOption = dataMakanan.options[dataMakanan.selectedIndex];
-    var hargaMakanan = parseFloat(selectedOption.value); // Get the price from the selected option
+    var hargaMakanan = parseFloat(selectedOption.value);
     var namaMakanan = selectedOption.text;
     var dataJumlah = parseInt(document.getElementById("pesanan").value);
     var dataVoucher = document.getElementById("voucher").value;
-    var total = hargaMakanan * dataJumlah; // Calculate the total based on the selected option's price
+    var total = hargaMakanan * dataJumlah;
     var setelahDiskon = total;
     var diskon = 0.2;
 
