@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kuis 1 Ahmad Arroziqi</title>  
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Kui Pemrograman Web: HTML, CSS, Javascript</h1>
+  </header>
+  <main>
+    <h3>Jawablah dengan benar!</h3>
+    <form action="" id="form">
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Pertanyaan</th>
+          <th>Pilihan Jawaban</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><p>Mana yang <i>bukan</i> termasuk bahasa pemrograman?</p></td>
+          <td>
+            <ul>
+              <li>
+                <input type="radio" name="bahasa" id="javascript" onclick="selectAnswer('javascript')">
+                <label for="javascript">JavaScript</label>
+              </li>
+              <li>
+                <input type="radio" name="bahasa" id="codeblock" onclick="selectAnswer('codeblock')">
+                <label for="codeblock">CodeBlock</label>
+              </li>
+              <li>
+                <input type="radio" name="bahasa" id="java" onclick="selectAnswer('java')">
+                <label for="java">Java</label>
+              </li>
+              <li>
+                <input type="radio" name="bahasa" id="cpp" onclick="selectAnswer('cpp')">
+                <label for="cpp">C++</label>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Berapakah 4 + 2?</td>
+          <td>
+            <input type="text" name="jawaban2" id="jawaban2">
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Apa warna langit pada siang hari?</td>
+          <td>
+            <select name="jawaban3" id="jawaban3">
+              <option value="merah">merah</option>
+              <option value="biru">biru</option>
+              <option value="hitam">hitam</option>
+              <option value="hijau">hijau</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" onclick="checkAnswers(event)">
+    </form>
+  </main>
+  <aside>
+    <h2 id="jawaban"></h2>
+  </aside>
+  <footer>
+    <p>&copy; 2023 Kuis Pemrograman Web</p>
+  </footer>
+</body>
+</html>
