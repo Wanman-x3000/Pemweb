@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restaurant Satriyo</title>
+</head>
+<body>
+    <nav>
+        <h1 class="pojok">Satriyo's Restaurant</h1>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    <a href="catheringMenu.html">Cathering</a>
+                </li>
+                <li>
+                    <a href="rating.html">Rating</a>
+                </li>
+                <li>
+                    About
+                </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div  class="grid-1" >
+            <h1>Resevarsi Restoran</h1>
+            <p>Selamat datang di resevarsi restoran Satriyo</p>
+        </div>
+        <div class="grid-3"><img src="restorant2.jpg" /></div>
+        <form >
+            <div class="grid-2">
+                <h2>silahkan isi data dibawah ini :</h2>
+                <label name="label-nama">Nama :</label>
+                <input class="data" placeholder=" e.g Ari Ganteng" id="nama-pemesan">
+                <br>
+                <label name="label-email">Email : </label>
+                <input class="data" type="email" placeholder=" e.g ariaprilianto@gmail.com" id="email-pemesan">
+                <br>
+                <label name="label-nim">Nomor Telepon :</label>
+                <input class="data" type="number" placeholder=" e.g +62 89xxxxxxx" id="nomor-pemesan">
+                <br>
+                <label name="label-tanggal">Tanggal Pesan :</label>
+                <input class="data" type="datetime-local" id="tanggal-resevarsi">
+                <br>
+                <label name="label-banyakOrang">Jumlah Orang yang akan hadir :</label>
+                <input class="data" type="number" placeholder=" e.g 10" id="jumlah-orang">
+            </div >
+                <br>
+            <div class="grid-4">
+               <input onclick="masukanData()" type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

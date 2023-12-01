@@ -1,0 +1,31 @@
+body{
+    margin: 0 0;
+    padding: 0 0;
+    background-color: wheat;
+    text-align: center;
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+  }
+ul{
+    list-style: none;
+    display: flex; 
+    margin-right: 10px; 
+  }
+  
+li{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+.pojok{
+    margin-left: 15px;
+}
+h1{
+    font-size: larger;
+}
+img{
+    width: 50%;
+}
