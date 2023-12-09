@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lamanRating.css" />
+</head>
+<body>
+    <nav>
+        <h1 class="pojok">Satriyo's Restaurant</h1>
+            <ul>
+                <li>
+                    <a href="TakeHomeTask7.html">Home</a>
+                </li>
+                <li>
+                    Cathering
+                </li>
+                <li>
+                    Rating
+                </li>
+                <li>
+                    About
+                </li>
+            </ul>
+    </nav>
+    <form>
+            <table id="banana">
+            <tr><td>
+            <label >Jumlah Rating:</label>
+            <input class="data" id="nilai" type="number" /><td></tr>
+            <tr><td><label >kesan: </label></tr>
+            <tr><td><input class="data" type="text" id="kesan"></tr>
+            <tr><td><button onclick="masukanData()">Submit</button></td></tr>
+            </table>
+        </form>
+        <br><br><br><br>
+        <table class="bungkus2">
+            <tr >
+                <td>Rating : </td>
+                <td>100/10</td>
+            </tr>
+            <tr>
+                <td>Kesan : </td>
+                <td>Mantap sangat wo</td>
+            </tr>
+        </table>
+        <br>
+        <div id="kotak-komentar"></div>
+
+        <table class="bungkus2">
+            <tr >
+                <td>Rating : </td>
+                <td><div id="outputNilai"></div></td>
+            </tr>
+            <tr>
+                <td>Kesan : </td>
+                <td><div id="outputKesan"></div></td>
+            </tr>
+        </table>
+        <script src="jas.js"></script>
+</body>
+</html>
