@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <h1 class="pojok">Satriyo's Library</h1>
+</nav>
+    <form action="signup.php" method="POST">
+        <fieldset name="data-diri">
+          <label for="username">username : <input id="username" name="username" type="text" placeholder="Ari Satriyo" required /></label>
+          <label for="email">Email : <input id="email" name="email" type="email" placeholder="arisatriyo@gmail.com" required /></label>
+          <label for="pass" >Password : <input id="pass" name="pass" type="password" placeholder="Password" required /></label>
+          <label for="konfirm_pass" >Konfirmasi Password : <input id="konfirm_pass" name="konfirm_pass" type="password" placeholder="Konfirmasi Password" required /></label>
+          <footer>Sudah mendaftarkan akun? <a href="login.html">Sign in disini !</a></footer>
+          <input type="submit" value="Submit" id="submit" />
+      </form>
+</body>
+</html>
