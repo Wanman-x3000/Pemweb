@@ -1,0 +1,21 @@
+.card {
+    width: 120px; /* Atur lebar kartu toko */
+    height: 100px; /* Atur tinggi kartu toko */
+    margin: 5px; /* Atur margin antar kartu */
+    /* Tambahkan properti lain sesuai kebutuhan styling */
+}
+.card .card-image {
+    height: 60%; /* Atur tinggi gambar dalam kartu */
+    overflow: hidden; /* Potong gambar jika terlalu besar */
+    position: relative;
+}
+.card .card-image img {
+    width: 100%; /* Atur gambar agar mengisi lebar secara proporsional */
+    height: 100%; /* Atur tinggi gambar agar sesuai dengan container */
+    object-fit: cover; /* Potong gambar agar sesuai container */
+}
+.card .card-content {
+    height: 40%; /* Atur tinggi konten dalam kartu */
+    overflow: hidden; /* Jika konten terlalu besar */
+    padding: 10px; /* Atur padding konten */
+}
